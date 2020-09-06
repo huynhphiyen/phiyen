@@ -1,0 +1,310 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background: #003143;	
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#container_fluid{
+	background: #0079A6;
+	width:1370;
+	height:100vh;
+}
+#container{
+/*	background:#135E2E;*/
+	width:1370px;
+	height:1000px;
+	margin: auto;
+}
+#header{
+/*	background: #0099A6;*/
+	width:1370px;
+	height:100px;
+}
+.logo{
+/*	background: #85F5FF;*/
+	width:370px;
+	height:100px;
+	float: left;
+}
+.logo img{
+    width: 60px;
+    margin: 11px 0px;
+}
+.search{	
+/*	background: #1BEDFF;*/
+	width:1000px;
+	height:100px;
+	float: right;
+}
+.search ul{
+/*	background: #420D0E;*/
+	padding-left: 300px;
+	padding-top:25px;
+    list-style: none;
+}
+.search ul li{
+	display: inline-block;
+	margin-left: 20px;
+}
+/*
+.search ul li input[type="text"]{
+	width:200px;
+	height: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.3);
+	border: 2px solid #fff;
+	border-radius: 18px;
+	font-size: 12px;
+	outline:none;
+	position: relative;
+	top:-9px;
+}
+*/
+.search ul li a{
+	color: #85F5FF;
+	font-size:25px;
+}
+.pers{
+	background: #E87375;
+	width: 100px;
+	height: 30px;
+}
+.menu1{
+	background: #A22D2F;
+	width:1370px;
+	height: 50px;
+	padding-top:10px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 100;
+}
+.menu1 ul{
+	text-align: center; 
+	list-style: none;
+}
+.menu1 ul li{
+	margin-left: 100px;
+/*	background: #16707F;*/
+	display: inline-block;
+	width: 140px;
+	position: relative;
+/*	float:left;*/
+	
+}
+.menu1 ul li a{
+	color: #E8E8E8;
+	text-decoration: none;
+}
+.menu1 ul li a:hover{
+	color:#AEAE96;
+}
+.menu1 ul li ul{
+	position: absolute;
+}
+.menu1 ul li ul li{ 
+	margin:auto; 
+	visibility:hidden;
+}
+.menu1 ul li:hover ul li{
+	visibility: visible;
+	background: #110387;
+}
+
+#content{
+	background: #005C4C;
+	width:1370px;
+	height: 400px;	
+}
+.infor{
+	background: #00A689;
+	width:1370px;
+	height:400px;
+	position: relative;
+	overflow: hidden;
+}
+.infor a::after{
+	width: 270px;
+	height:400px;
+	background: #000000;
+}
+.infor a img{
+	width: 1100px;
+	position:absolute;
+	transition: 0.4s;
+}
+.infor a:hover:nth-child(-n+5) img{
+     left: 0px;
+}
+.infor a:nth-child(1) img{
+	z-index:1;
+	 left: 0px;
+
+}
+
+.infor a img{
+	left: 1100px;
+	z-index:2;
+}
+
+.infor a:nth-child(3) img{
+	left: 1130px;
+	z-index:3;
+
+}
+.infor a:nth-child(4) img{
+	left: 1160px;
+	z-index:4;
+
+}
+.infor a:nth-child(5) img{
+	left: 1190px;
+	z-index:5;
+
+}
+#footer{
+	background: #005722;
+	width:1370px;
+	height:200px;
+}
+.body .body1{
+	width: 1370px;
+	height:auto;
+}
+/*
+.body .body1 ul{
+	list-style: none;
+}
+*/
+/*
+.body .body1 ul li{
+	display: inline-block;
+	
+}
+*/
+#body .body1 a img{
+	width:458px; 
+	margin-right:-5px;
+} 
+#body .body2 a img{
+	width:458px; 
+	margin-right:-5px;
+} 
+#mk{
+	height: 1300px;
+	width: 1370px;
+	background: #00FF0D;
+}
+#mk:nth-child(-n+3) a img{
+	width:271.4px;
+		box-sizing: content-box;
+	padding-bottom: 100px;
+} 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 300;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+#sticky{
+/*	background: #00FBFF;*/
+	width:30px;
+	height:140px;
+	position: fixed;
+	top:50%;
+	padding-top: 10px;
+}
+#sticky a{
+	color: #FFFFFD;
+	text-align: center;
+	display: block;	
+}
+#sticky div {
+	background: hsla(359,58%,41%,1.00);
+	width:30px;
+	height:30px;
+	margin-top:7px;
+	padding-top: 4px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 2px;
+}
+#sticky div:hover{
+	background: #822425;
+}
+
+.animation{
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	overflow: hidden;
+	position:relative;
+	top:-700px;
+	left: -100px;
+	opacity: 0.8;
+	filter: blur(4px);
+	z-index: 200;
+}
+.animation img{
+	transition: 0.6s;
+	position: absolute;
+	z-index: 100;
+	animation-name:example;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+	animation-duration: 4s;
+	animation-timing-function:linear;
+}
+@keyframes example {
+	from{top:0px;
+	left: 0px;
+	}
+	to{
+		left: -800px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
